@@ -1,0 +1,57 @@
+body {
+    background-color: #F0F0F0;
+}
+
+/* 全体のグリッドレイアウト */
+#container {
+    display: grid;
+    grid-template-columns: 20px repeat(8, 200px) 20px;
+    grid-template-rows: 60px repeat(6, 100px);
+    gap: 12px 20px;
+}
+h1 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 8;
+}
+
+#leaflet-map {
+    height: 500px;
+    width: auto;
+    grid-row: 2 / 3;
+    grid-column: 3 / 8;
+}
+
+#markerBtn {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+#initializeBtn {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.btn-push {
+    width: 140px;
+    height: 60px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 4px;
+    background: #4676d7;
+    color: #fff;
+    padding: 6px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.btn-push:hover {
+    background: #1d49aa;
+}
+
+.btn-push:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}

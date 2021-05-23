@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script src="{{url_for('static', filename='jquery-2.2.2.min.js')}}"></script>
+    <script src="{{url_for('static', filename='leaflet/leaflet.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='leaflet/leaflet.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheet.css')}}">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <h1>DEMO(Flask + Leaflet + Vue.js)</h1>
+        <div id="leaflet-map"></div>
+    
+        <button id="markerBtn" class="btn-push" :value="marker" v-on:click="clickMarker">マーカー表示</button>
+        <button id="initializeBtn" class="btn-push" :value="initialize" v-on:click="clickInitialize">初期化</button>
+
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    
+</body>
