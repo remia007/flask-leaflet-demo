@@ -14,6 +14,16 @@
     
         <button id="markerBtn" class="btn-push" :value="marker" v-on:click="clickMarker">マーカー表示</button>
         <button id="initializeBtn" class="btn-push" :value="initialize" v-on:click="clickInitialize">初期化</button>
+        <div id="widgets-number" class="form-group">
+            <label for="time">number: </label>
+            <select class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
 
     </div>
     <script src="{{url_for('static', filename='script.js')}}"></script>

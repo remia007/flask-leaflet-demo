@@ -45,7 +45,6 @@ function makeMap() {
     L.control.scale({ maxWidth: 200, position: 'bottomright', imperial: false }).addTo(map);
 }
 
-
 var mk = new Vue ({
     el: "#markerBtn",
     data: {
