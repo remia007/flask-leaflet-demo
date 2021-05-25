@@ -125,31 +125,6 @@ function whenMouseout(e) {
     });
 }
 
-// フロントからバックエンドへのデータ受け渡し方法
-function postFlask(number) {
-
-    let numberJSON = JSON.stringify(number);
-
-    // サーバー送受信
-    var root = $.ajax({
-        type: "POST",
-        url: "/count",
-        data: numberJSON,
-        contentType: 'application/json',
-        dataType: "json",    
-        success: function(obj) {
-            console.log("Ajax success");
-            return obj
-        },
-        error: function(err) {
-            console.log("error!");
-            console.log(err);
-        }
-    });
-    rt.view(root)
-
-}
-
 // Vue.js
 var mk = new Vue ({
     el: "#markerBtn",

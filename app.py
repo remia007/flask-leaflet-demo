@@ -13,7 +13,6 @@ def index():
 @app.route('/count', methods=["POST"])
 def add_number():
     json_data = request.json
-    print(json_data)
     api = Api.sqrt(int(json_data))
     return jsonify(api)
 
