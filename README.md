@@ -1,8 +1,8 @@
-Flask and Leaflet
+Flask and Leaflet(練習用)
 =================
 
-デモアプリケーション(練習用)
 Python Version:
+
 ```
 3.9.1
 ```
