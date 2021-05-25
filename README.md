@@ -1,13 +1,14 @@
 Flask and Leaflet
 =================
 
-A simple demo integrating Flask and Leaflet.
+デモアプリケーション(練習用)
 
 
 Install dependencies:
 
 ```
 pip install flask
+pip install numpy
 ```
 
 

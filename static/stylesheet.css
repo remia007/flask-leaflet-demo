@@ -32,10 +32,15 @@ h1 {
     grid-column: 2 / 3;
 }
 
-#widgets-number {
+/* #widgets-number {
     grid-row: 4 / 5;
     grid-column: 2 / 3;
 }
+
+#square-root {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;   
+} */
 
 /* セレクトボックススタイル */
 .form-group label {
