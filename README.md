@@ -2,7 +2,10 @@ Flask and Leaflet
 =================
 
 デモアプリケーション(練習用)
-
+Python Version:
+```
+3.9.1
+```
 
 Install dependencies:
 
